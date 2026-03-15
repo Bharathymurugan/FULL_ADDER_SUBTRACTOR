@@ -40,7 +40,17 @@ Borrow out = A'Bin + A'B + BBin
 
 **Procedure**
 
-Write the detailed procedure here
+Open Intel Quartus Prime software and create a new project by specifying the project name, working directory, and target device (Cyclone II).
+
+Create a new Verilog HDL file, write the Verilog program for the Full Adder circuit, and save the file with the extension .v.
+
+Compile the program using the Start Compilation option to check for syntax errors and generate the design files.
+
+After successful compilation, open the RTL Viewer to observe the RTL schematic diagram of the designed Full Adder circuit.
+
+Create a University Program VWF (Vector Waveform File) and assign input signals A, B, and Cin. Apply all possible input combinations to verify the truth table.
+
+Run the simulation to obtain the output timing waveform and verify the outputs Sum and Carry with the expected truth table values.
 
 **Program:**
 
