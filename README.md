@@ -75,6 +75,7 @@ endmodule
 */
 
 **RTL Schematic**
+![Output](https://github.com/Bharathymurugan/FULL_ADDER_SUBTRACTOR/blob/main/Screenshot%202026-03-15%20220521.png?raw=true)
 
 **Output Timing Waveform**
 
