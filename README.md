@@ -37,9 +37,10 @@ Diff = A ⊕ B ⊕ Bin
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
-Full adder
+##Full adder
+
 ![Output](https://github.com/Bharathymurugan/FULL_ADDER_SUBTRACTOR/blob/main/truthexp3fa.png?raw=true)
-Full subtractor
+##Full subtractor
 ![Output](https://github.com/Bharathymurugan/FULL_ADDER_SUBTRACTOR/blob/main/truthexp3fs.png?raw=true)
 
 **Procedure**
@@ -58,7 +59,7 @@ Full subtractor
 4.Compile, simulate, implement, and program the design similarly to the full adder.
 
 **Program:**
-
+```
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
 Developed by: Bharathy M
 RegisterNumber: 212225040046\25013139
@@ -77,7 +78,7 @@ assign cout=w2|w3;
 
 endmodule
 */
-
+```
 **RTL Schematic**
 ![Output](https://github.com/Bharathymurugan/FULL_ADDER_SUBTRACTOR/blob/main/Screenshot%202026-03-15%20220521.png?raw=true)
 
