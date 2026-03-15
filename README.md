@@ -40,21 +40,38 @@ Borrow out = A'Bin + A'B + BBin
 
 **Procedure**
 
-Open Intel Quartus Prime software and create a new project by specifying the project name, working directory, and target device (Cyclone II).
+**Full Adder:**
+1.Open Quartus II and create a new project.
+2.Use schematic design entry to draw the full adder circuit. 
+3.The circuit consists of XOR, AND, and OR gates. 
+4.Compile the design, verify its functionality through simulation. 
+5.Implement the design on the target device and program it.
 
-Create a new Verilog HDL file, write the Verilog program for the Full Adder circuit, and save the file with the extension .v.
-
-Compile the program using the Start Compilation option to check for syntax errors and generate the design files.
-
-After successful compilation, open the RTL Viewer to observe the RTL schematic diagram of the designed Full Adder circuit.
-
-Create a University Program VWF (Vector Waveform File) and assign input signals A, B, and Cin. Apply all possible input combinations to verify the truth table.
-
-Run the simulation to obtain the output timing waveform and verify the outputs Sum and Carry with the expected truth table values.
+**Full Subtractor:** 
+1.Follow the same steps as for the full adder. 
+2.Draw the full subtractor circuit using schematic design. 
+3.The circuit includes XOR, AND, OR gates to perform subtraction. 
+4.Compile, simulate, implement, and program the design similarly to the full adder.
 
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
+Developed by: Bharathy M
+RegisterNumber: 212225040046\25013139
+module expt3(sum,cout,a,b,cin);
+output sum;
+output cout;
+input a;
+input b;
+input cin;
+wire w1,w2,w3;
+assign w1=a^b;
+assign w2=a&b;
+assign w3=w1&cin;
+assign sum=w1^cin;
+assign cout=w2|w3;
+
+endmodule
 */
 
 **RTL Schematic**
